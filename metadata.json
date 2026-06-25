@@ -1,0 +1,6 @@
+{
+  "name": "Stage Light Aim Calculator",
+  "description": "Calculate where to position a stage light beam on the floor at a lower height to hit a target when raised.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
