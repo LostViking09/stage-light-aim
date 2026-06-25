@@ -85,7 +85,7 @@ const NumberInput = ({ label, value, onChange, icon: Icon, unit, theme }: Number
           }`}
           step="0.1"
         />
-        <div className="absolute right-0 top-0 bottom-0 pr-1 flex items-center gap-1 bg-gradient-to-l from-slate-50 dark:from-slate-900 via-slate-50 dark:via-slate-900 to-transparent pl-3 pointer-events-none">
+        <div className="absolute right-0 top-0 bottom-0 pr-1 flex items-center gap-1 bg-gradient-to-l from-white dark:from-slate-900 via-white dark:via-slate-900 to-white/0 dark:to-transparent pl-3 pointer-events-none">
           {unit && (
             <span className={`text-[10px] font-mono font-bold mr-1 ${isDark ? 'text-slate-500' : 'text-slate-400'}`}>
               {unit}
@@ -120,7 +120,7 @@ const NumberInput = ({ label, value, onChange, icon: Icon, unit, theme }: Number
 };
 
 export default function App() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [theme, setTheme] = useState<'dark' | 'light'>('light');
   const [lx, setLx] = useState('0.0');
   const [ly, setLy] = useState('0.0');
   const [hc, setHc] = useState('1.5');
@@ -522,7 +522,7 @@ export default function App() {
               </div>
 
               {/* SVG Frame - Clean, light-mode contrasting background grids */}
-              <div className={`p-4 md:p-6 aspect-[4/3] flex items-center justify-center transition-colors ${
+              <div className={`w-full aspect-[4/3] flex items-center justify-center transition-colors ${
                 isDark ? 'bg-slate-950' : 'bg-slate-50'
               }`}>
                 {activeTab === 'top' ? (
