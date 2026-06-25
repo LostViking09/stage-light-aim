@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/stage-light-aim/sw.js', { scope: '/stage-light-aim/' })})}
